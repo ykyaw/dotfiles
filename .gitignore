@@ -2,7 +2,9 @@
 .cargo/
 .config/Code/
 .config/chromium/
+.config/discord/
 .config/spotify/
+.config/teams-for-linux/
 .local/share/
 .mozilla/
 .pub-cache/
