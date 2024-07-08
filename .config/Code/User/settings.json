@@ -882,7 +882,7 @@
     }
   ],
   "window.menuBarVisibility": "toggle",
-  "workbench.startupEditor": "none",
   "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha"
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.startupEditor": "none"
 }

@@ -1,10 +1,10 @@
 if status is-interactive
   zoxide init fish --cmd cd | source
   starship init fish | source
+end
 
-  set -x EDITOR nvim
-  set -x VISUAL nvim
-  set -x CHROME_BIN chromium
-  set -x CHROME_EXECUTABLE chromium
-  set -x GPG_TTY $(tty)
+if status is-login
+  if test -z "$DISPLAY" -a "$XDG_VTNR"
+    exec startx -- -keeptty
+  end
 end
