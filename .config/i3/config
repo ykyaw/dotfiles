@@ -11,7 +11,7 @@ bindsym $super+b exec --no-startup-id firefox-developer-edition
 bindsym $super+c exec --no-startup-id code
 bindsym $super+e exec --no-startup-id thunar
 
-bindsym $super+Return exec wezterm
+bindsym $super+Return exec kitty
 bindsym $super+Shift+q kill
 bindsym $alt+F4 kill
 bindsym $super+d exec --no-startup-id dmenu_run
