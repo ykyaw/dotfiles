@@ -3,7 +3,9 @@
 SETUVAR --export CHROME_BIN:chromium
 SETUVAR --export CHROME_EXECUTABLE:chromium
 SETUVAR --export EDITOR:nvim
+SETUVAR --export GBM_BACKEND:nvidia\x2ddrm
 SETUVAR --export VISUAL:nvim
+SETUVAR --export __GLX_VENDOR_LIBRARY_NAME:nvidia
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
