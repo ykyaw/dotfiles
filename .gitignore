@@ -9,10 +9,12 @@
 .config/spotify/
 .config/teams-for-linux/
 .dartServer/
+.eclipse/
 .gitkraken/
+.java/
 .local/share/
 .mozilla/
-.npm
+.npm/
 .pub-cache/
 .steam/
 .vscode/

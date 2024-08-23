@@ -1,21 +1,16 @@
-# i3 config file (v4)
-#
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
-font pango:monospace 10
+font pango:monospace 11
 
 set $super Mod4
 set $alt Mod1
 
-bindsym $super+b exec --no-startup-id firefox-developer-edition
+bindsym $super+Shift+Return exec --no-startup-id firefox-developer-edition
 bindsym $super+c exec --no-startup-id code
-bindsym $super+e exec --no-startup-id thunar
 
-bindsym $super+Return exec kitty
+bindsym $super+Return exec wezterm
 bindsym $super+Shift+q kill
 bindsym $alt+F4 kill
 bindsym $super+d exec --no-startup-id dmenu_run
-bindsym $super+space exec --no-startup-id rofi -show drun
+bindsym $super+space exec --no-startup-id "rofi -modi drun,run -show drun"
 
 bindsym Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -33,8 +28,6 @@ bindsym $super+Down focus down
 bindsym $super+Up focus up
 bindsym $super+Right focus right
 
-bindsym $super+a focus parent
-
 bindsym $super+Shift+h move left
 bindsym $super+Shift+j move down
 bindsym $super+Shift+k move up
@@ -45,10 +38,20 @@ bindsym $super+Shift+Down move down
 bindsym $super+Shift+Up move up
 bindsym $super+Shift+Right move right
 
+bindsym $super+b split h
+bindsym $super+v split v
+
 bindsym $super+f fullscreen toggle
 bindsym $super+Shift+space floating toggle
 
-bindsym $super+s layout toggle split
+bindsym $super+s layout stacking
+bindsym $super+w layout tabbed
+bindsym $super+e layout toggle split
+
+bindsym $super+a focus parent
+
+bindsym $super+Shift+minus move scratchpad
+bindsym $super+minus scratchpad show
 
 set $ws1 "1"
 set $ws2 "2"
@@ -95,19 +98,22 @@ floating_modifier $super
 default_border pixel 2
 hide_edge_borders smart
 
-assign [class="^Code$" window_type="normal"] 2
-assign [class="^discord$"] 4
-assign [class="^teams-for-linux$"] 4
-assign [class="^Spotify$"] 5
-assign [class="^steam$"] 6
+assign [class="^firefox-developer-edition$"] 1
+assign [class="^Chromium$"] 2
+assign [class="^Code$" window_type="normal"] 3
+assign [class="^DBeaver$"] 4
+assign [class="^teams-for-linux$"] 5
+assign [class="^discord$"] 5
+assign [class="^Spotify$"] 6
+assign [class="^steam$"] 7
 
-gaps inner 5
+gaps inner 10
 smart_gaps on
 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id udiskie
 exec --no-startup-id numlockx
-exec --no-startup-id xset s 60 60; xset s noblank
+exec --no-startup-id xset s 60 60 
 exec --no-startup-id dex --autostart --environment i3
 
 bar {
