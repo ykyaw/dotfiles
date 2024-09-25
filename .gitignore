@@ -11,13 +11,14 @@
 .dartServer/
 .eclipse/
 .gitkraken/
+.gradle/
 .java/
 .local/share/
-.mozilla/
 .npm/
 .pub-cache/
 .steam/
 .vscode/
+.zen/
 Android/
 Desktop
 Documents
