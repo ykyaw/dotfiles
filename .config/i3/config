@@ -3,10 +3,10 @@ font pango:monospace 11
 set $super Mod4
 set $alt Mod1
 
-bindsym $super+Shift+Return exec --no-startup-id firefox-developer-edition
+bindsym $super+Shift+Return exec --no-startup-id zen-browser
 bindsym $super+c exec --no-startup-id code
 
-bindsym $super+Return exec wezterm
+bindsym $super+Return exec kitty
 bindsym $super+Shift+q kill
 bindsym $alt+F4 kill
 bindsym $super+d exec --no-startup-id dmenu_run
@@ -98,9 +98,10 @@ floating_modifier $super
 default_border pixel 2
 hide_edge_borders smart
 
-assign [class="^firefox-developer-edition$"] 1
+assign [class="^zen-alpha$"] 1
 assign [class="^Chromium$"] 2
 assign [class="^Code$" window_type="normal"] 3
+assign [class="^GitKraken$"] 4
 assign [class="^DBeaver$"] 4
 assign [class="^teams-for-linux$"] 5
 assign [class="^discord$"] 5
@@ -115,6 +116,7 @@ exec --no-startup-id udiskie
 exec --no-startup-id numlockx
 exec --no-startup-id xset s 60 60 
 exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id nvidia-settings --load-config-only
 
 bar {
   status_command i3status
