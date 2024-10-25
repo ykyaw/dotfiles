@@ -1,96 +1,105 @@
-amd-ucode 20240909.552ed9b8-1
-android-studio 2024.1.2.13-1
-base 3-2
-base-devel 1-2
-bibata-cursor-theme-bin 2.0.7-1
-btrfs-progs 6.10.1-2
-chromium 129.0.6668.58-1
-dbeaver 24.2.1-1
-dex 0.9.0-2
-discord 0.0.69-1
-dmenu 5.3-3
-docker 1:27.2.1-1
-docker-compose 2.29.7-1
-dunst 1.11.0-1
-efibootmgr 18-3
-fish 3.7.1-2
-fnm-bin 1.37.1-0
-fontconfig 2:2.15.0-2
-fzf 0.55.0-1
-ghostscript 10.04.0-1
-git 2.46.2-1
-gnome-keyring 1:46.2-1
-graphicsmagick 1.3.45-3
-grub 2:2.12-3
-gvfs 1.56.0-1
-i3-wm 4.23-4
-i3lock 2.15-2
-i3status 2.15-1
-inter-font 4.0-3
-kitty 0.36.2-1
-lib32-fontconfig 2:2.15.0-1
-lib32-nvidia-utils 560.35.03-1
-lib32-pipewire 1:1.2.4-1
-libbsd 0.12.2-2
-libva-nvidia-driver 0.0.12-1
-linux 6.10.10.arch1-1
-linux-firmware 20240909.552ed9b8-1
-linux-firmware-qlogic 20240909.552ed9b8-1
-linux-headers 6.10.10.arch1-1
-maim 5.8.0-2
-man-db 2.13.0-1
-mesa 1:24.2.3-1
-mesa-utils 9.0.0-5
-mousepad 0.6.2-4
-neovim 0.10.1-5
-network-manager-applet 1.36.0-1
-networkmanager 1.48.10-1
-noto-fonts 1:24.9.1-1
-noto-fonts-cjk 20230817-2
-noto-fonts-emoji 1:2.042-1
-noto-fonts-extra 1:24.9.1-1
-numlockx 1.2-6
-nvidia-open-dkms 560.35.03-6
-nvidia-settings 560.35.03-1
-nwg-look 0.2.7-1
-openssh 9.9p1-1
-pacman-contrib 1.10.6-2
-papirus-icon-theme 20240501-1
-paru 2.0.4-1
-pavucontrol 1:6.1-1
-pipewire 1:1.2.4-1
-pipewire-alsa 1:1.2.4-1
-pipewire-jack 1:1.2.4-1
-pipewire-pulse 1:1.2.4-1
-playerctl 2.4.1-4
-polkit-gnome 0.105-11
-postgresql 16.3-4
-redis 7.2.5-1
-reflector 2023-2
-ripgrep 14.1.1-1
-rofi 1.7.5-3
-spotify-launcher 0.5.4-1
-starship 1.20.1-1
-steam 1.0.0.81-2
-teams-for-linux 1.10.2-1
-thunar 4.18.11-2
-timeshift 24.06.3-1
-ttf-dejavu 2.37+18+g9b5d1b2f-7
-ttf-firacode-nerd 3.2.1-2
-ttf-liberation 2.1.5-2
-udiskie 2.5.3-1
-ufw 0.36.2-4
-vim 9.1.0740-1
-visual-studio-code-bin 1.93.1-1
-wireplumber 0.5.6-1
-xclip 0.13-5
-xdg-user-dirs 0.18-2
-xdg-utils 1.2.1-1
-xdotool 3.20211022.1-2
-xone-dkms-git 0.3.r57.g29ec357-1
-xorg-server 21.1.13-1
-xorg-xinit 1.4.2-2
-yadm 3.2.2-2
-zen-browser-bin 1.0.1.a.4-1
-zoxide 0.9.6-1
-zram-generator 1.1.2-1
+amd-ucode
+android-studio
+base
+base-devel
+bibata-cursor-theme-bin
+btrfs-progs
+chromium
+cursor-bin
+dbeaver
+dex
+discord
+dmenu
+docker
+docker-compose
+dunst
+efibootmgr
+fish
+fnm-bin
+fontconfig
+fzf
+ghostscript
+git
+gitkraken
+gnome-keyring
+gnu-netcat
+graphicsmagick
+grub
+gvfs
+i3-wm
+i3lock
+i3status
+inter-font
+jdk17-openjdk
+kitty
+lib32-fontconfig
+lib32-nvidia-utils
+lib32-pipewire
+libbsd
+libva-nvidia-driver
+linux
+linux-firmware
+linux-firmware-qlogic
+linux-headers
+maim
+man-db
+mesa
+mesa-utils
+mousepad
+mpv
+neovim
+network-manager-applet
+networkmanager
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+numlockx
+nvidia-open-dkms
+nvidia-settings
+nwg-look
+openssh
+pacman-contrib
+papirus-icon-theme
+paru
+pavucontrol
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+playerctl
+polkit-gnome
+postgresql
+qbittorrent
+redis
+reflector
+ripgrep
+rofi
+spotify-launcher
+starship
+steam
+teams-for-linux
+thunar
+thunar-archive-plugin
+timeshift
+ttf-dejavu
+ttf-firacode-nerd
+ttf-liberation
+udiskie
+ufw
+unzip
+vim
+visual-studio-code-bin
+wireplumber
+xarchiver
+xclip
+xdg-user-dirs
+xdg-utils
+xdotool
+xone-dkms-git
+xorg-server
+xorg-xinit
+yadm
+zen-browser-bin
+zoxide
+zram-generator
