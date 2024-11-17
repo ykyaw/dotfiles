@@ -1,27 +1,24 @@
 [Default Applications]
-x-scheme-handler/http=zen-alpha.desktop
-x-scheme-handler/https=zen-alpha.desktop
-x-scheme-handler/chrome=zen-alpha.desktop
-text/html=zen-alpha.desktop
-application/x-extension-htm=zen-alpha.desktop
-application/x-extension-html=zen-alpha.desktop
-application/x-extension-shtml=zen-alpha.desktop
-application/xhtml+xml=zen-alpha.desktop
-application/x-extension-xhtml=zen-alpha.desktop
-application/x-extension-xht=zen-alpha.desktop
-x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
-inode/directory=thunar.desktop
+x-scheme-handler/http=firefox-developer-edition.desktop
+x-scheme-handler/https=firefox-developer-edition.desktop
+x-scheme-handler/chrome=firefox-developer-edition.desktop
+text/html=firefox-developer-edition.desktop
+application/x-extension-htm=firefox-developer-edition.desktop
+application/x-extension-html=firefox-developer-edition.desktop
+application/x-extension-shtml=firefox-developer-edition.desktop
+application/xhtml+xml=firefox-developer-edition.desktop
+application/x-extension-xhtml=firefox-developer-edition.desktop
+application/x-extension-xht=firefox-developer-edition.desktop
 x-scheme-handler/gitkraken=GitKraken.desktop
 
 [Added Associations]
-x-scheme-handler/http=zen-alpha.desktop;
-x-scheme-handler/https=zen-alpha.desktop;
-x-scheme-handler/chrome=zen-alpha.desktop;
-text/html=zen-alpha.desktop;
-application/x-extension-htm=zen-alpha.desktop;
-application/x-extension-html=zen-alpha.desktop;
-application/x-extension-shtml=zen-alpha.desktop;
-application/xhtml+xml=zen-alpha.desktop;
-application/x-extension-xhtml=zen-alpha.desktop;
-application/x-extension-xht=zen-alpha.desktop;
-inode/directory=thunar.desktop;
+x-scheme-handler/http=firefox-developer-edition.desktop;
+x-scheme-handler/https=firefox-developer-edition.desktop;
+x-scheme-handler/chrome=firefox-developer-edition.desktop;
+text/html=firefox-developer-edition.desktop;
+application/x-extension-htm=firefox-developer-edition.desktop;
+application/x-extension-html=firefox-developer-edition.desktop;
+application/x-extension-shtml=firefox-developer-edition.desktop;
+application/xhtml+xml=firefox-developer-edition.desktop;
+application/x-extension-xhtml=firefox-developer-edition.desktop;
+application/x-extension-xht=firefox-developer-edition.desktop;
