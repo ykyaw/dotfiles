@@ -5,7 +5,7 @@ if status is-interactive
 end
 
 if status is-login
-  if test -z "$WAYLAND_DISPLAY" -a "$XDG_VTNR" = 1
-    exec Hyprland
+  if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+    exec startx
   end
 end
