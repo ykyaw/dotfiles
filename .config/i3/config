@@ -1,115 +1,114 @@
 font pango:monospace 11
 
-set $super Mod4
-set $alt Mod1
+assign [class="firefox-developer-edition"] 1
+assign [class="Chromium"] 2
+assign [class="Cursor" window_type="normal"] 3
+assign [class="GitKraken"] 4
+assign [class="DBeaver"] 4
+assign [class="teams-for-linux"] 5
+assign [class="discord"] 5
+assign [class="Spotify"] 6
+assign [class="steam"] 7
 
-bindsym $super+Shift+Return exec --no-startup-id zen-browser
-bindsym $super+c exec --no-startup-id code
+for_window [class="firefox-developer-edition" window_type="utility"] sticky enable
 
-bindsym $super+Return exec kitty
-bindsym $super+Shift+q kill
-bindsym $alt+F4 kill
-bindsym $super+d exec --no-startup-id dmenu_run
-bindsym $super+space exec --no-startup-id "rofi -modi drun,run -show drun"
-
+bindsym Mod4+Return exec --no-startup-id wezterm
+bindsym Mod4+Shift+Return exec --no-startup-id firefox-developer-edition
+bindsym Mod4+c exec --no-startup-id cursor
+bindsym Mod4+d exec --no-startup-id rofi -show run
+bindsym Mod1+space exec --no-startup-id rofi -show drun
+bindsym Mod4+Tab workspace back_and_forth
 bindsym Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
+bindsym Mod4+Shift+q kill
+bindsym Mod1+F4 kill
+bindsym Mod4+Shift+c reload
+bindsym Mod4+Shift+r restart
+bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym Mod4+Mod1+l exec i3lock -c 000000
+
+bindsym Mod4+h focus left
+bindsym Mod4+j focus down
+bindsym Mod4+k focus up
+bindsym Mod4+l focus right
+
+bindsym Mod4+Left focus left
+bindsym Mod4+Down focus down
+bindsym Mod4+Up focus up
+bindsym Mod4+Right focus right
+
+bindsym Mod4+Shift+h move left
+bindsym Mod4+Shift+j move down
+bindsym Mod4+Shift+k move up
+bindsym Mod4+Shift+l move right
+
+bindsym Mod4+Shift+Left move left
+bindsym Mod4+Shift+Down move down
+bindsym Mod4+Shift+Up move up
+bindsym Mod4+Shift+Right move right
+
+bindsym Mod4+1 workspace number 1
+bindsym Mod4+2 workspace number 2
+bindsym Mod4+3 workspace number 3
+bindsym Mod4+4 workspace number 4
+bindsym Mod4+5 workspace number 5
+bindsym Mod4+6 workspace number 6
+bindsym Mod4+7 workspace number 7
+bindsym Mod4+8 workspace number 8
+bindsym Mod4+9 workspace number 9
+bindsym Mod4+0 workspace number 10
+
+bindsym Mod4+Shift+1 move container to workspace number 1
+bindsym Mod4+Shift+2 move container to workspace number 2
+bindsym Mod4+Shift+3 move container to workspace number 3
+bindsym Mod4+Shift+4 move container to workspace number 4
+bindsym Mod4+Shift+5 move container to workspace number 5
+bindsym Mod4+Shift+6 move container to workspace number 6
+bindsym Mod4+Shift+7 move container to workspace number 7
+bindsym Mod4+Shift+8 move container to workspace number 8
+bindsym Mod4+Shift+9 move container to workspace number 9
+bindsym Mod4+Shift+0 move container to workspace number 10
+
+bindsym Mod4+b split h
+bindsym Mod4+v split v
+
+bindsym Mod4+s layout stacking
+bindsym Mod4+w layout tabbed
+bindsym Mod4+e layout toggle split
+
+bindsym Mod4+f fullscreen toggle
+bindsym Mod4+Shift+space floating toggle
+
+bindsym Mod4+a focus parent
+
+bindsym Mod4+Shift+minus move scratchpad
+bindsym Mod4+minus scratchpad show
+
+mode "resize" {
+  bindsym h resize shrink width 10 px or 10 ppt
+  bindsym j resize grow height 10 px or 10 ppt
+  bindsym k resize shrink height 10 px or 10 ppt
+  bindsym l resize grow width 10 px or 10 ppt
+
+  bindsym Left resize shrink width 10 px or 10 ppt
+  bindsym Down resize grow height 10 px or 10 ppt
+  bindsym Up resize shrink height 10 px or 10 ppt
+  bindsym Right resize grow width 10 px or 10 ppt
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym Mod4+r mode "default"
+}
+bindsym Mod4+r mode "resize"
+
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-bindsym $super+$alt+C exec --no-startup-id $HOME/development/scripts/autoclick.sh
 
-bindsym $super+h focus left
-bindsym $super+j focus down
-bindsym $super+k focus up
-bindsym $super+l focus right
-
-bindsym $super+Left focus left
-bindsym $super+Down focus down
-bindsym $super+Up focus up
-bindsym $super+Right focus right
-
-bindsym $super+Shift+h move left
-bindsym $super+Shift+j move down
-bindsym $super+Shift+k move up
-bindsym $super+Shift+l move right
-
-bindsym $super+Shift+Left move left
-bindsym $super+Shift+Down move down
-bindsym $super+Shift+Up move up
-bindsym $super+Shift+Right move right
-
-bindsym $super+b split h
-bindsym $super+v split v
-
-bindsym $super+f fullscreen toggle
-bindsym $super+Shift+space floating toggle
-
-bindsym $super+s layout stacking
-bindsym $super+w layout tabbed
-bindsym $super+e layout toggle split
-
-bindsym $super+a focus parent
-
-bindsym $super+Shift+minus move scratchpad
-bindsym $super+minus scratchpad show
-
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
-
-bindsym $super+1 workspace number $ws1
-bindsym $super+2 workspace number $ws2
-bindsym $super+3 workspace number $ws3
-bindsym $super+4 workspace number $ws4
-bindsym $super+5 workspace number $ws5
-bindsym $super+6 workspace number $ws6
-bindsym $super+7 workspace number $ws7
-bindsym $super+8 workspace number $ws8
-bindsym $super+9 workspace number $ws9
-bindsym $super+0 workspace number $ws10
-
-bindsym $super+Tab workspace back_and_forth
-
-bindsym $super+Shift+1 move container to workspace number $ws1
-bindsym $super+Shift+2 move container to workspace number $ws2
-bindsym $super+Shift+3 move container to workspace number $ws3
-bindsym $super+Shift+4 move container to workspace number $ws4
-bindsym $super+Shift+5 move container to workspace number $ws5
-bindsym $super+Shift+6 move container to workspace number $ws6
-bindsym $super+Shift+7 move container to workspace number $ws7
-bindsym $super+Shift+8 move container to workspace number $ws8
-bindsym $super+Shift+9 move container to workspace number $ws9
-bindsym $super+Shift+0 move container to workspace number $ws10
-
-bindsym $super+Shift+c reload
-bindsym $super+Shift+r restart
-bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $super+$alt+l exec i3lock -c 000000
-
-floating_modifier $super
+floating_modifier Mod4
 
 default_border pixel 2
 hide_edge_borders smart
-
-assign [class="^zen-alpha$"] 1
-assign [class="^Chromium$"] 2
-assign [class="^Code$" window_type="normal"] 3
-assign [class="^GitKraken$"] 4
-assign [class="^DBeaver$"] 4
-assign [class="^teams-for-linux$"] 5
-assign [class="^discord$"] 5
-assign [class="^Spotify$"] 6
-assign [class="^steam$"] 7
-
-gaps inner 10
-smart_gaps on
 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id udiskie
@@ -119,8 +118,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nvidia-settings --load-config-only
 
 bar {
-  status_command i3status
-  mode hide
   hidden_state hide
-  modifier $super
+  mode hide
+  status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 }
