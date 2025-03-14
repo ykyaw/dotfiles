@@ -1,14 +1,12 @@
 .android/
 .cache/
 .config/BraveSoftware/
-.config/Cursor/
+.config/Code/
 .config/GitKraken/
 .config/Google/
-.config/chromium/
 .config/discord/
 .config/spotify/
 .config/teams-for-linux/
-.cursor/
 .dart-tool/
 .dartServer/
 .eclipse/
@@ -20,6 +18,7 @@
 .npm/
 .pub-cache/
 .steam/
+.vscode/
 Android/
 Desktop
 Documents

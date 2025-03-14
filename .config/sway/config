@@ -1,9 +1,8 @@
 font pango:monospace 11
 seat seat0 xcursor_theme Bibata-Modern-Classic 24
 
-assign [app_id="firefox-developer-edition"] 1
-assign [app_id="chromium"] 2
-assign [app_id="cursor-url-handler"] 3
+assign [app_id="brave-browser"] 1
+assign [app_id="code"] 3
 assign [app_id="GitKraken"] 4
 assign [app_id="DBeaver"] 4
 assign [app_id="teams-for-linux"] 5
@@ -11,17 +10,18 @@ assign [app_id="discord"] 5
 assign [app_id="spotify"] 6
 assign [class="^steam$"] 7
 
-for_window [app_id="firefox-developer-edition"] inhibit_idle fullscreen
-for_window [app_id="firefox-developer-edition" title="Picture-in-Picture"] floating enable, sticky on, move position 2980 px 1680 px
+for_window [app_id="" title="Picture in picture"] floating enable, sticky on, resize set width 960px height 540px, move position 2880px 1620px  
 
-bindsym Mod4+Return exec wezterm
-bindsym Mod4+Shift+Return exec firefox-developer-edition
-bindsym Mod4+c exec cursor
-bindsym Mod4+d exec rofi -modes "drun,run,window" -show run
-bindsym Mod1+space exec rofi -modes "drun,run,window" -show drun
+bindsym Mod4+Return exec ghostty
+bindsym Mod4+Shift+Return exec brave
+bindsym Mod4+c exec code
+bindsym Mod4+d exec rofi -show run
+bindsym Mod1+space exec rofi -show drun
 bindsym Mod1+tab exec rofi -show window
 bindsym Mod4+tab workspace back_and_forth
+
 bindsym Print exec grim -g "$(slurp -d)" - | wl-copy
+bindsym Mod4+Mod1+c exec bash -c 'killall xdotool || while xdotool click --repeat 10 --delay 10 1; do :; done'
 
 bindsym Mod4+Shift+q kill
 bindsym Mod1+F4 kill
@@ -116,6 +116,7 @@ smart_borders on
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec udiskie
 exec swayidle -w timeout 60 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
+exec nm-applet
 
 input type:pointer accel_profile flat
 input type:keyboard xkb_numlock enabled
