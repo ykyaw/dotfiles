@@ -20,6 +20,7 @@ seat seat0 xcursor_theme Bibata-Modern-Classic
 
 assign [app_id="firefox-developer-edition"] workspace 1
 assign [class="Chromium"] workspace 2
+assign [app_id="net.novade.novade_lite" ] workspace 2
 assign [app_id="code"] workspace 3
 assign [app_id="GitKraken"] workspace 4
 assign [app_id="DBeaver"] workspace 4
@@ -30,6 +31,7 @@ assign [class="Spotify"] workspace 6
 assign [class="steam"] workspace 7
 
 for_window [app_id="firefox-developer-edition" title="Picture-in-Picture"] floating enable, sticky enable
+for_window [instance="qemu-system-x86_64" class="Emulator"] floating enable
 
 bindsym Mod4+Return exec ghostty
 bindsym Mod4+d exec rofi -show run
