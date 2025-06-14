@@ -1,0 +1,5 @@
+font-family = Fira Code
+theme = tokyonight
+background-opacity = 0.9
+background-blur = true
+command = fish -i
