@@ -1,0 +1,141 @@
+floating_modifier Mod4 normal
+
+output DP-2 resolution 3440x1440@120Hz bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+
+input type:pointer accel_profile flat
+input type:keyboard xkb_numlock on
+
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec swayidle timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
+exec udiskie
+
+exec_always {
+  gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+  gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+  gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
+  gsettings set org.gnome.desktop.interface font-name 'Inter Display'
+}
+
+seat seat0 xcursor_theme Bibata-Modern-Classic
+
+assign [app_id="firefox-developer-edition"] workspace 1
+assign [class="Chromium"] workspace 2
+assign [app_id="code"] workspace 3
+assign [app_id="GitKraken"] workspace 4
+assign [app_id="DBeaver"] workspace 4
+assign [app_id="bruno"] workspace 4
+assign [app_id="teams-for-linux"] workspace 5
+assign [app_id="discord"] workspace 5
+assign [class="Spotify"] workspace 6
+assign [class="steam"] workspace 7
+
+for_window [app_id="firefox-developer-edition" title="Picture-in-Picture"] floating enable, sticky enable
+
+bindsym Mod4+Return exec ghostty
+bindsym Mod4+d exec rofi -show run
+bindsym Mod1+space exec rofi -show drun
+bindsym Mod1+Ctrl+space exec rofi -show emoji
+
+bindsym Mod4+Shift+q kill
+bindsym Mod1+F4 kill
+bindsym Mod4+Shift+c reload
+bindsym Mod4+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+bindsym Mod4+h focus left
+bindsym Mod4+j focus down
+bindsym Mod4+k focus up
+bindsym Mod4+l focus right
+
+bindsym Mod4+Left focus left
+bindsym Mod4+Down focus down
+bindsym Mod4+Up focus up
+bindsym Mod4+Right focus right
+
+bindsym Mod4+Shift+h move left
+bindsym Mod4+Shift+j move down
+bindsym Mod4+Shift+k move up
+bindsym Mod4+Shift+l move right
+
+bindsym Mod4+Shift+Left move left
+bindsym Mod4+Shift+Down move down
+bindsym Mod4+Shift+Up move up
+bindsym Mod4+Shift+Right move right
+
+bindsym Mod4+1 workspace number 1
+bindsym Mod4+2 workspace number 2
+bindsym Mod4+3 workspace number 3
+bindsym Mod4+4 workspace number 4
+bindsym Mod4+5 workspace number 5
+bindsym Mod4+6 workspace number 6
+bindsym Mod4+7 workspace number 7
+bindsym Mod4+8 workspace number 8
+bindsym Mod4+9 workspace number 9
+bindsym Mod4+0 workspace number 10
+
+bindsym Mod4+Shift+1 move container to workspace number 1
+bindsym Mod4+Shift+2 move container to workspace number 2
+bindsym Mod4+Shift+3 move container to workspace number 3
+bindsym Mod4+Shift+4 move container to workspace number 4
+bindsym Mod4+Shift+5 move container to workspace number 5
+bindsym Mod4+Shift+6 move container to workspace number 6
+bindsym Mod4+Shift+7 move container to workspace number 7
+bindsym Mod4+Shift+8 move container to workspace number 8
+bindsym Mod4+Shift+9 move container to workspace number 9
+bindsym Mod4+Shift+0 move container to workspace number 10
+
+bindsym Mod4+b splith
+bindsym Mod4+v splitv
+bindsym Mod4+s layout stacking
+bindsym Mod4+w layout tabbed
+bindsym Mod4+e layout toggle split
+bindsym Mod4+f fullscreen
+bindsym Mod4+Shift+space floating toggle
+bindsym Mod4+space focus mode_toggle
+bindsym Mod4+a focus parent
+
+bindsym Mod4+tab workspace back_and_forth
+bindsym Mod1+tab exec rofi -show window
+
+bindsym Mod4+Shift+minus move scratchpad
+bindsym Mod4+minus scratchpad show
+
+mode "resize" {
+  bindsym h resize shrink width 10px
+  bindsym j resize grow height 10px
+  bindsym k resize shrink height 10px
+  bindsym l resize grow width 10px
+
+  bindsym Left resize shrink width 10px
+  bindsym Down resize grow height 10px
+  bindsym Up resize shrink height 10px
+  bindsym Right resize grow width 10px
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+bindsym Mod4+r mode "resize"
+
+bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+bindsym --locked XF86AudioPlay exec playerctl play-pause
+bindsym --locked XF86AudioNext exec playerctl next
+bindsym --locked XF86AudioPrev exec playerctl previous
+
+bindsym Print exec grim
+
+bar {
+  position top
+
+  status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+
+  colors {
+    statusline #ffffff
+    background #323232
+    inactive_workspace #32323200 #32323200 #5c5c5c
+  }
+}
+
+include /etc/sway/config.d/*
