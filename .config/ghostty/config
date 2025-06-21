@@ -1,0 +1,5 @@
+font-family = Fira Code
+theme = catppuccin-mocha
+background-opacity = 0.8
+background-blur = true
+command = /usr/bin/fish
