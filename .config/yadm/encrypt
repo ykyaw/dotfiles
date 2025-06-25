@@ -1,2 +1,2 @@
-.ssh/
+.config/yadm/alt/.ssh/
 .npmrc
