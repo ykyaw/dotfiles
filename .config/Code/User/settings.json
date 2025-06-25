@@ -1,0 +1,25 @@
+{
+  "catppuccin.accentColor": "teal",
+  "editor.fontFamily": "Fira Code",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    80
+  ],
+  "editor.tabSize": 2,
+  "extensions.ignoreRecommendations": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "vim.foldfix": true,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.startupEditor": "none"
+}
