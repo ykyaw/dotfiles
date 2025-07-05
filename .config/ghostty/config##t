@@ -2,4 +2,8 @@ font-family = Fira Code
 theme = GruvboxDarkHard
 background-opacity = 0.8
 background-blur = true
+{% if yadm.os == "Linux" %}
 command = /usr/bin/fish
+{% else %}
+command = /opt/homebrew/bin/fish
+{% endif %}
