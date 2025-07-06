@@ -11,4 +11,8 @@ if status is-interactive
   alias vi=nvim
   alias vim=nvim
   alias vimdiff="nvim -d"
+
+  if test -f ~/.zshrc
+    source ~/.zshrc
+  end
 end

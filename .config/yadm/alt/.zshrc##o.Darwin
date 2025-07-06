@@ -1,0 +1,5 @@
+export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
+export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
+export PATH="$HOME/.pub-cache/bin:/opt/homebrew/opt/node@22/bin:$PATH"
+export PGPASSWORD="password"
