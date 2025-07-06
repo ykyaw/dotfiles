@@ -38,6 +38,8 @@ bindsym Mod4+Return exec swaymsg [app_id=^com.mitchellh.ghostty$] focus || exec 
 bindsym Mod4+b exec swaymsg [class=^Brave-browser$] focus || exec brave
 bindsym Mod4+c exec swaymsg [app_id=^code$] focus || exec code
 
+bindsym Mod1+c exec ~/development/scripts/autoclick.sh
+
 bindsym Mod4+Shift+q kill
 
 bindsym Mod4+d exec rofi -show run
