@@ -9,6 +9,7 @@
   ],
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": true,
+  "git.enableCommitSigning": true,
   "github.copilot.nextEditSuggestions.enabled": true,
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
