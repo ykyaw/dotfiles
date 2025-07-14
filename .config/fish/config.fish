@@ -8,6 +8,7 @@ if status is-interactive
 
   alias drb="dart run build_runner build --delete-conflicting-outputs"
   alias g="git"
+  alias sysyadm="sudo yadm --yadm-dir /etc/yadm --yadm-data /etc/yadm/data"
   alias vi=nvim
   alias vim=nvim
   alias vimdiff="nvim -d"
