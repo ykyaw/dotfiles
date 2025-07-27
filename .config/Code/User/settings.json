@@ -1,12 +1,10 @@
 {
+  "catppuccin.accentColor": "teal",
   "editor.fontFamily": "Fira Code",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [ 80 ],
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": true,
   "git.enableCommitSigning": true,
@@ -16,9 +14,225 @@
   "terminal.integrated.defaultProfile.linux": "fish",
   "vim.foldfix": true,
   "vim.highlightedyank.enable": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [ "<C-k>" ],
+      "commands": [ "editor.action.triggerParameterHints" ],
+      "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    }
+  ],
   "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [ "<C-Left>" ],
+      "commands": [ "workbench.action.decreaseViewWidth" ]
+    },
+    {
+      "before": [ "<C-Down>" ],
+      "commands": [ "workbench.action.decreaseViewHeight" ]
+    },
+    {
+      "before": [ "<C-Up>" ],
+      "commands": [ "workbench.action.increaseViewHeight" ]
+    },
+    {
+      "before": [ "<C-Right>" ],
+      "commands": [ "workbench.action.increaseViewWidth" ]
+    },
+    {
+      "before": [ "<S-h>" ],
+      "commands": [ "workbench.action.previousEditorInGroup" ]
+    },
+    {
+      "before": [ "<S-l>" ],
+      "commands": [ "workbench.action.nextEditorInGroup" ]
+    },
+    {
+      "before": [ "[", "b" ],
+      "commands": [ "workbench.action.previousEditorInGroup" ]
+    },
+    {
+      "before": [ "]", "b" ],
+      "commands": [ "workbench.action.nextEditorInGroup" ]
+    },
+    {
+      "before": [ "<leader>", "b", "b" ],
+      "commands": [ "workbench.action.quickOpenPreviousEditor" ]
+    },
+    {
+      "before": [ "<leader>", "`" ],
+      "commands": [ "workbench.action.quickOpenPreviousEditor" ]
+    },
+    {
+      "before": [ "<leader>", "b", "d" ],
+      "commands": [ "workbench.action.closeActiveEditor" ]
+    },
+    {
+      "before": [ "<leader>", "b", "o" ],
+      "commands": [ "workbench.action.closeOtherEditors" ]
+    },
+    {
+      "before": [ "<leader>", "f", "n" ],
+      "commands": [ "workbench.action.files.newUntitledFile" ]
+    },
+    {
+      "before": [ "[", "d" ],
+      "commands": [ "editor.action.marker.prev" ]
+    },
+    {
+      "before": [ "]", "d" ],
+      "commands": [ "editor.action.marker.next" ]
+    },
+    {
+      "before": [ "[", "e" ],
+      "commands": [ "editor.action.marker.prev" ]
+    },
+    {
+      "before": [ "]", "e" ],
+      "commands": [ "editor.action.marker.next" ]
+    },
+    {
+      "before": [ "[", "w" ],
+      "commands": [ "editor.action.marker.prev" ]
+    },
+    {
+      "before": [ "]", "w" ],
+      "commands": [ "editor.action.marker.next" ]
+    },
+    {
+      "before": [ "<leader>", "f", "T" ],
+      "commands": [ "workbench.action.terminal.toggleTerminal" ]
+    },
+    {
+      "before": [ "<leader>", "f", "t" ],
+      "commands": [ "workbench.action.terminal.toggleTerminal" ]
+    },
+    {
+      "before": [ "<leader>", "-" ],
+      "commands": [ "workbench.action.splitEditorDown" ]
+    },
+    {
+      "before": [ "<leader>", "|" ],
+      "commands": [ "workbench.action.splitEditorRight" ]
+    },
+    {
+      "before": [ "<leader>", "<tab>", "l" ],
+      "commands": [ "workbench.action.lastEditorInGroup" ]
+    },
+    {
+      "before": [ "<leader>", "<tab>", "o" ],
+      "commands": [ "workbench.action.closeOtherEditors" ]
+    },
+    {
+      "before": [ "<leader>", "<tab>", "f" ],
+      "commands": [ "workbench.action.firstEditorInGroup" ]
+    },
+    {
+      "before": [ "<leader>", "<tab>", "<tab>" ],
+      "commands": [ "workbench.action.files.newUntitledFile" ]
+    },
+    {
+      "before": [ "<leader>", "<tab>", "]" ],
+      "commands": [ "workbench.action.nextEditor" ]
+    },
+    {
+      "before": [ "<leader>", "<tab>", "d" ],
+      "commands": [ "workbench.action.closeActiveEditor" ]
+    },
+    {
+      "before": [ "<leader>", "<tab>", "[" ],
+      "commands": [ "workbench.action.previousEditor" ]
+    },
+    {
+      "before": [ "g", "d" ],
+      "commands": [ "editor.action.revealDefinition" ]
+    },
+    {
+      "before": [ "g", "r" ],
+      "commands": [ "editor.action.goToReferences" ]
+    },
+    {
+      "before": [ "g", "I" ],
+      "commands": [ "editor.action.goToImplementation" ]
+    },
+    {
+      "before": [ "g", "y" ],
+      "commands": [ "editor.action.goToTypeDefinition" ]
+    },
+    {
+      "before": [ "g", "D" ],
+      "commands": [ "editor.action.goToDeclaration" ]
+    },
+    {
+      "before": [ "K" ],
+      "commands": [ "editor.action.showHover" ]
+    },
+    {
+      "before": [ "g", "K" ],
+      "commands": [ "editor.action.triggerParameterHints" ],
+      "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+      "before": [ "<leader>", "c", "a" ],
+      "commands": [ "editor.action.quickFix" ],
+      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": [ "<leader>", "c", "r" ],
+      "commands": [ "editor.action.rename" ],
+      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": [ "<leader>", "c", "R" ],
+      "commands": [ "editor.action.rename" ],
+      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": [ "<leader>", "c", "A" ],
+      "commands": [ "editor.action.quickFix" ],
+      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": [ "<leader>", "b", "l" ],
+      "commands": [ "workbench.action.closeEditorsToTheLeft" ]
+    },
+    {
+      "before": [ "<leader>", "b", "r" ],
+      "commands": [ "workbench.action.closeEditorsToTheRight" ]
+    },
+    {
+      "before": [ "[", "B" ],
+      "commands": [ "workbench.action.moveEditorLeftInGroup" ]
+    },
+    {
+      "before": [ "]", "B" ],
+      "commands": [ "workbench.action.moveEditorRightInGroup" ]
+    },
+    {
+      "before": [ "<leader>", "s", "r" ],
+      "commands": [ "editor.action.startFindReplaceAction" ],
+      "when": "editorFocus || editorIsOpen"
+    },
+    {
+      "before": [ "<leader>", "<space>" ],
+      "commands": [ "workbench.action.quickOpen" ]
+    },
+    {
+      "before": [ "<leader>", "/" ],
+      "commands": [ "workbench.action.findInFiles" ]
+    },
+    {
+      "before": [ "<leader>", "e" ],
+      "commands": [ "workbench.view.explorer" ],
+      "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+      "before": [ "<leader>", "E" ],
+      "commands": [ "workbench.files.action.showActiveFileInExplorer" ]
+    }
+  ],
   "vim.smartRelativeLine": true,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.startupEditor": "none"
 }

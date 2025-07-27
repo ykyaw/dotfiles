@@ -1,0 +1,37 @@
+[
+  {
+    "command": "workbench.action.navigateLeft",
+    "key": "ctrl+h",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "command": "workbench.action.navigateDown",
+    "key": "ctrl+j",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "command": "workbench.action.navigateUp",
+    "key": "ctrl+k",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "command": "workbench.action.navigateRight",
+    "key": "ctrl+l",
+    "when": "vim.mode != 'Insert'"
+  },
+  {
+    "command": "editor.action.moveLinesDownAction",
+    "key": "alt+j",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "editor.action.moveLinesUpAction",
+    "key": "alt+k",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "ctrl+/",
+    "when": "terminal.active"
+  }
+]
