@@ -13,3 +13,9 @@ export VISUAL=nvim
 
 # If running from tty1 start sway
 [ "$(tty)" = "/dev/tty1" ] && exec sway
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[ -f /home/thatoe/.dart-cli-completion/bash-config.bash ] && . /home/thatoe/.dart-cli-completion/bash-config.bash || true
+## [/Completion]
+
