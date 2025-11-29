@@ -1,4 +1,10 @@
-output DP-2 resolution 3440x1440@120Hz bg ~/Pictures/wallpaper.png fill
+output DP-2 resolution 3440x1440@120Hz bg ~/Pictures/wallpaper.jpg fill
+
+gaps inner 5
+gaps outer 5
+default_border pixel 2
+smart_borders on
+smart_gaps on
 
 seat seat0 xcursor_theme Bibata-Modern-Classic
 
@@ -19,14 +25,14 @@ exec swayidle -w \
   before-sleep 'swaylock -f -c 000000'
 exec nm-applet
 
-assign [class=^Brave-browser$] 1
+assign [app_id=^brave-browser$] 1
 assign [app_id=^code$] 2
 assign [app_id=^net.novade.novade_lite$] 3
 assign [app_id=^DBeaver$] 4
 assign [app_id=^bruno$] 4
 assign [app_id=^teams-for-linux$] 5
 assign [app_id=^discord$] 5
-assign [class=^Spotify$] 6
+assign [app_id=^spotify$] 6
 assign [class=^steam$] 7
 
 for_window [title="^Picture in picture$"] floating enable, sticky enable
@@ -150,14 +156,6 @@ bindsym Mod4+Shift+p exec grimshot savecopy area
 bindsym Mod4+Mod1+p exec grimshot savecopy output
 bindsym Mod4+Ctrl+p exec grimshot savecopy window
 
-bar {
-  position top
-  status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-  colors {
-    statusline #ffffff
-    background #323232
-    inactive_workspace #32323200 #32323200 #5c5c5c
-  }
-}
+bar swaybar_command waybar
 
 include /etc/sway/config.d/*
