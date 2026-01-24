@@ -48,7 +48,6 @@ seat seat0 xcursor_theme Bibata-Modern-Classic
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec swayidle -w \
   timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on "' \
-  timeout 1800 'systemctl suspend' \
   before-sleep 'swaylock -f -c 000000'
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -103,9 +102,11 @@ assign [class=^steam$] 7
     bindsym Mod1+space exec rofi -show drun
     bindsym Mod1+tab exec rofi -show window
 
-    bindsym $mod+b exec swaymsg [app_id=^brave-browser$] focus || exec brave
+    bindsym $mod+Shift+Return exec swaymsg [app_id=^brave-browser$] focus || exec brave
     bindsym $mod+c exec swaymsg [app_id=^code$] focus || exec code
     bindsym $mod+y exec kitty yazi
+
+    bindsym $mod+b exec pkill -SIGUSR1 '^waybar$'
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
