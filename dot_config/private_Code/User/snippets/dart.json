@@ -1,0 +1,16 @@
+{
+  "fontLoader": {
+    "prefix": "fontLoader",
+    "body": [
+      "await (FontLoader('Roboto')..addFont(rootBundle.load('assets/fonts/Roboto-Regular.ttf'))).load();",
+    ],
+    "description": "Load the Roboto font for testing"
+  },
+  "golden": {
+    "prefix": "golden",
+    "body": [
+      "await expectLater(find.byType(MaterialApp), matchesGoldenFile('golden/DO_NOT_COMMIT.png'));",
+    ],
+    "description": "Add a golden test"
+  }
+}
