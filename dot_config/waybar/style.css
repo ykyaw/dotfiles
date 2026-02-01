@@ -4,12 +4,13 @@
 
 window#waybar {
   background-color: #000000;
+  color: #cdd6f4;
 }
 
 #workspaces button.focused {
-  color: #94e2d5;
+  color: #b4befe;
 }
 
 #workspaces button.urgent {
-  background-color: #f38ba8;
+  background-color: #fab387;
 }

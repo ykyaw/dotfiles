@@ -13,6 +13,15 @@ seat seat0 xcursor_theme Bibata-Modern-Classic 24
 default_border pixel 4
 smart_borders on
 
+# class                     border     background text       indicator  child_border
+client.background                      #1e1e1e
+client.focused              #b4befe    #1e1e1e    #cdd6f4    #f5e0dc    #b4befe
+client.focused_inactive     #6c7086    #1e1e1e    #cdd6f4    #f5e0dc    #6c7086
+client.focused_tab_title    #6c7086    #1e1e1e    #cdd6f4
+client.unfocused            #6c7086    #1e1e1e    #cdd6f4    #f5e0dc    #6c7086
+client.urgent               #fab387    #1e1e1e    #fab387    #6c7086    #fab387
+client.placeholder          #6c7086    #1e1e1e    #cdd6f4    #6c7086    #6c7086
+
 assign {
   [app_id="brave-browser"] 1
   [app_id="code"] 2
