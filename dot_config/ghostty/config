@@ -1,0 +1,4 @@
+theme = Catppuccin Mocha
+background-opacity = 0.9
+font-family = Berkeley Mono
+command = /usr/bin/fish --login --interactive
