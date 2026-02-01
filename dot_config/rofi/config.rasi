@@ -1,0 +1,52 @@
+configuration {
+  font: "Berkeley Mono 12";
+  show-icons: true;
+}
+
+* {
+  background-color: transparent;
+  text: #cdd6f4;
+  base: #1e1e2e;
+  mantle: #181825;
+}
+
+window {
+  width: 25%;
+  background-color: @base;
+  text-color: @text;
+  border: 1px;
+  border-color: @mantle;
+}
+
+entry {
+  placeholder: "";
+  text-color: @text;
+}
+
+prompt {
+  enabled: false;
+}
+
+textbox-prompt-colon {
+  enabled: false;
+}
+
+listview {
+  spacing: 5px;
+  border: 0px;
+}
+
+element.normal.normal,
+element.alternate.normal {
+  background-color: transparent;
+  text-color: @text;
+}
+
+element.selected.normal {
+  background-color: @mantle;
+  text-color: @text;
+}
+
+scrollbar {
+  handle-color: @mantle;
+}
