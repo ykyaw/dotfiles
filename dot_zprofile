@@ -1,0 +1,8 @@
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+
+export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+export PATH=$HOME/.pub-cache/bin:$PATH
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
