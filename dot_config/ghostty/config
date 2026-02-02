@@ -1,4 +1,5 @@
 theme = Catppuccin Mocha
 background-opacity = 0.9
+background-blur = true
 font-family = Berkeley Mono
-command = /usr/bin/fish --login --interactive
+command = /opt/homebrew/bin/fish --login --interactive
