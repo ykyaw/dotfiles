@@ -13,7 +13,7 @@
   "github.copilot.nextEditSuggestions.enabled": true,
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
-  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.osx": "fish",
   "vim.foldfix": true,
   "vim.highlightedyank.enable": true,
   "vim.leader": "<space>",
