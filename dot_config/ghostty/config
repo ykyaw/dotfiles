@@ -1,5 +1,6 @@
 theme = Catppuccin Mocha
 background-opacity = 0.9
 background-blur = true
+macos-titlebar-style = hidden
 font-family = Berkeley Mono
 command = /opt/homebrew/bin/fish --login --interactive
