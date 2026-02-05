@@ -10,6 +10,8 @@ input {
 
 seat seat0 xcursor_theme Bibata-Modern-Classic 24
 
+font Berkeley Mono 10
+
 default_border pixel 4
 smart_borders on
 
@@ -54,8 +56,13 @@ bindsym {
   Mod4+y exec ghostty -e yazi
   Mod4+d exec wmenu-run
   Mod1+Space exec rofi -show drun
+  Mod1+Tab exec rofi -show window
 
-  Print exec grim
+  Print exec grimshot copy area
+  Mod4+p exec grimshot save active
+  Mod4+Shift+p exec grimshot save area
+  Mod4+Mod1+p exec grimshot save output
+  Mod4+Ctrl+p exec grimshot save window
 
   Mod4+Shift+c reload
   Mod4+Shift+q kill
@@ -117,7 +124,7 @@ bindsym {
   Mod4+Shift+9 move container to workspace number 9
   Mod4+Shift+0 move container to workspace number 10
 
-  Mod4+r mode "resize"
+  Mod4+r exec ~/.config/sway/scripts/resize-toggle.sh
 
   --locked {
     XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
@@ -128,23 +135,6 @@ bindsym {
     XF86AudioStop exec playerctl stop
     XF86AudioNext exec playerctl next
     XF86AudioPrev exec playerctl previous
-  }
-}
-
-mode "resize" {
-  bindsym {
-    h resize shrink width 10px
-    j resize grow height 10px
-    k resize shrink height 10px
-    l resize grow width 10px
-
-    Left resize shrink width 10px
-    Down resize grow height 10px
-    Up resize shrink height 10px
-    Right resize grow width 10px
-
-    Return mode "default"
-    Escape mode "default"
   }
 }
 
