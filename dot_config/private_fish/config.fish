@@ -7,6 +7,7 @@ if status is-interactive
   fzf --fish | source
 
   alias drb="dart run build_runner build -d"
+  alias etcfiles="sudo git --git-dir /etc/.etcfiles --work-tree /etc"
   alias lg=lazygit
   alias vi=nvim
   alias vim=nvim
