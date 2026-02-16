@@ -4,7 +4,7 @@ output DP-2 {
 }
 
 input {
-  type:keyboard xkb_options ctrl:nocaps
+  type:keyboard xkb_numlock on
   type:pointer accel_profile flat
 }
 
