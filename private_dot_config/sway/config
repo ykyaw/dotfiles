@@ -36,7 +36,7 @@ assign {
 }
 
 for_window {
-  [title="Picture in picture"] floating enable, sticky enable, move position 75ppt 75ppt
+  [title="Picture in picture"] floating enable, sticky enable, move position 2900px 1100px
   [title="Emulator" window_type="utility"] move scratchpad
 }
 
@@ -55,7 +55,10 @@ bindsym {
   Mod4+D exec wmenu-run -f "Berkeley Mono 16"
   Mod1+Space exec rofi -show drun
 
-  Print exec grim
+  Print exec grimshot copy area
+  Mod4+P exec grimshot save active
+  Mod4+Shift+P exec grimshot save output
+  Mod4+Ctrl+P exec grimshot save window
 
   Mod4+Shift+C reload
   Mod4+Shift+Q kill
