@@ -1,0 +1,20 @@
+* {
+  font-family:
+    FontAwesome,
+    Berkeley Mono,
+    Inter Display,
+    sans-serif;
+}
+
+window#waybar {
+  background-color: #000000;
+  color: #cdd6f4;
+}
+
+#workspaces button.focused {
+  color: #b4befe;
+}
+
+#workspaces button.urgent {
+  color: #f38ba8;
+}
