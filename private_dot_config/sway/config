@@ -52,7 +52,7 @@ bindsym {
   Mod4+Mod1+Return exec swaymsg [app_id="brave-browser"] focus || brave
   Mod4+C exec swaymsg [app_id="code"] focus || code
   Mod4+Y exec kitty yazi
-  Mod4+D exec wmenu-run
+  Mod4+D exec wmenu-run -f "Berkeley Mono 16"
   Mod1+Space exec rofi -show drun
 
   Print exec grim
