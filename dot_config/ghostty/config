@@ -1,0 +1,3 @@
+theme = Catppuccin Mocha
+font-family = Berkeley Mono
+command = fish -li
