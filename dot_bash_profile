@@ -1,0 +1,15 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+export CHROME_EXECUTABLE=/var/lib/flatpak/app/com.brave.Browser/current/active/export/bin/com.brave.Browser
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+export EDITOR=nvim
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+export FREETYPE_PROPERTIES="cff:no-stem-darkening=0 autofitter:no-stem-darkening=0"
+export PATH=$HOME/.pub-cache/bin:$PATH
+export VISUAL=nvim
