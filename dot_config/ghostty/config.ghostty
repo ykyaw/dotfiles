@@ -1,0 +1,5 @@
+theme = Catppuccin Mocha
+font-family = Berkeley Mono
+background-opacity = 0.9
+background-blur = true
+command = fish -li
