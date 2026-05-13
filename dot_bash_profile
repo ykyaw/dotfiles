@@ -1,0 +1,12 @@
+#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+export CHROME_EXECUTABLE=brave
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+export EDITOR=nvim
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+export PATH=$HOME/.pub-cache/bin:$PATH
+export VISUAL=nvim
