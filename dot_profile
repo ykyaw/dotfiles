@@ -1,0 +1,7 @@
+test -z "$PROFILEREAD" && . /etc/profile || true
+
+export CHROME_EXECUTABLE=/usr/bin/chromium-browser
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+export EDITOR=/usr/bin/nvim
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+export VISUAL=/usr/bin/nvim
