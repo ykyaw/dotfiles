@@ -7,6 +7,10 @@ fi
 
 # User specific environment and startup programs
 export PATH=$HOME/.local/share/fnm:$PATH
+export PATH=$HOME/fvm/bin:$PATH
+export PATH=$HOME/fvm/default/bin:$PATH
+export PATH=$PATH:$HOME/.pub-cache/bin
 
+export CHROME_EXECUTABLE=chromium-browser
 export EDITOR=nvim
 export VISUAL=nvim
