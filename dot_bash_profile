@@ -12,5 +12,6 @@ export PATH=$HOME/fvm/default/bin:$PATH
 export PATH=$PATH:$HOME/.pub-cache/bin
 
 export CHROME_EXECUTABLE=chromium-browser
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 export EDITOR=nvim
 export VISUAL=nvim
