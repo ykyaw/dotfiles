@@ -1,0 +1,34 @@
+{
+  "[dart]": {
+    "editor.rulers": [
+      160
+    ]
+  },
+  "[typescript]": {
+    "editor.rulers": [
+      140
+    ]
+  },
+  "chat.disableAIFeatures": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": true,
+  "editor.tabSize": 2,
+  "extensions.ignoreRecommendations": true,
+  "git.enableCommitSigning": true,
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.rebaseEditor.openOnPausedRebase": false,
+  "gitlens.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.initialHint": false,
+  "vim.foldfix": true,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<space>",
+  "vim.smartRelativeLine": true,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none"
+}
