@@ -4,5 +4,8 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
+export CHROME_EXECUTABLE=chromium
 export EDITOR=nvim
+export PATH=$HOME/fvm/default/bin:$PATH
+export PATH=$HOME/.pub-cache/bin:$PATH
 export VISUAL=nvim
