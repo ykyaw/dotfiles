@@ -1,0 +1,10 @@
+[user]
+	email = thatoe@pm.me
+	name = Ye Thatoe Kyaw
+	signingKey = /home/thatoe/.ssh/id_ed25519.pub
+[commit]
+	gpgSign = true
+[gpg]
+	format = ssh
+[push]
+	autoSetupRemote = true
