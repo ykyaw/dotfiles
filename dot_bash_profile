@@ -7,4 +7,5 @@ fi
 
 # User specific environment and startup programs
 export EDITOR=nvim
+export PATH=$HOME/.local/share/fnm:$PATH
 export VISUAL=nvim
