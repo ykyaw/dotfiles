@@ -6,6 +6,10 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
+export CHROME_EXECUTABLE=chromium-browser
 export EDITOR=nvim
 export PATH=$HOME/.local/share/fnm:$PATH
+export PATH=$HOME/fvm/bin:$PATH
+export PATH=$HOME/fvm/default/bin:$PATH
+export PATH=$HOME/.pub-cache/bin:$PATH
 export VISUAL=nvim
