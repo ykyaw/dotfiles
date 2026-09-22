@@ -5,6 +5,7 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 export CHROME_EXECUTABLE=chromium
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 export EDITOR=nvim
 export PATH=$HOME/fvm/default/bin:$PATH
 export PATH=$HOME/.pub-cache/bin:$PATH
