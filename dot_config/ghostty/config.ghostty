@@ -1,0 +1,3 @@
+font-family = Fira Code
+theme = Gruvbox Dark Hard
+command = fish -li
