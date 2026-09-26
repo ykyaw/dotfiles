@@ -1,10 +1,12 @@
 {
   "[dart]": {
-    "editor.rulers": [160]
+    "editor.rulers": [160],
   },
   "[typescript]": {
-    "editor.rulers": [140]
+    "editor.rulers": [140],
   },
+  "claudeCode.hideOnboarding": true,
+  "claudeCode.preferredLocation": "sidebar",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
@@ -24,5 +26,5 @@
   "vim.smartRelativeLine": true,
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
 }
